@@ -214,6 +214,7 @@ def test3():
         """
         ANOVA test
         """
+        from utilmy import pd_ANOVA
         df=pd_generateData(7,100)
         pd_ANOVA(df,'cat1','cat2')
 
@@ -221,6 +222,7 @@ def test4():
         """
             Normality test
         """
+        from utilmy import pd_normality_test
         df=pd_generateData(7,100)
         pd_normality_test(df,'0',"Shapiro")  
 
@@ -229,6 +231,7 @@ def test5():
         """
         Numerical_plots
         """
+        from utilmy import pd_numerical_plots
         df=pd_generateData(7,100)
         pd_numerical_plots(df,'1')
 
